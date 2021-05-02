@@ -8,6 +8,7 @@
     <title>Formulario de registro</title>
 </head>
 <body>
+    
    
     <div id="container">
         <h1>Formulario de Registro</h1>
@@ -15,19 +16,19 @@
 
             <!-- Nombre -->
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
+            <input type="text" name="nombre" id="nombre" required>
 
             <!-- Apellido -->
             <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido">
+            <input type="text" name="apellido" id="apellido" required>
 
             <!-- Edad -->
             <label for="edad">Edad</label>
-            <input type="number" name="edad" min="1" max="100" id="edad">
+            <input type="number" name="edad" min="1" max="100" id="edad" required>
 
             <!-- Numero de telefono -->
             <label for="telefono">Numero de telefono</label>
-            <input type="tel" name="telefono" maxlength="10"id="telefono">
+            <input type="tel" name="telefono" maxlength="10"id="telefono" required>
 
             <!-- Pais de Nacimiento -->
             <label for="paisNacimiento">Pais de Nacimiento</label>     
@@ -531,6 +532,5 @@
             <input type="submit" class="send-btn" name="Enviar formulario">
         </form>
     </div>  
-    <script src="./script.js"></script>
 </body>
 </html>
