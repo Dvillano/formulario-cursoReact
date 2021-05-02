@@ -4,10 +4,12 @@ const app = express();
 app.use(express.urlencoded());
 app.use(express.static("public"));
 
+//Envio el HTML en el GET request
 app.get("/", (req, res) => {
     res.send(__dirname + "/public/index.html")
 })
 
+//Envio los datos obtenidos en el metodo POST despues de enviar el form
 app.post("/form", (req, res) => {
     const nombre = req.body.nombre;
     const apellido = req.body.apellido;
@@ -19,6 +21,7 @@ app.post("/form", (req, res) => {
     res.send(html);
 })
 
+//Redirecciono al inicio en caso de ir a otra pagina
 app.get("*", (req,res) => {
     res.redirect("/");
 }) 
