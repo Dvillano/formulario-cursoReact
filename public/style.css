@@ -17,17 +17,28 @@ body {
 
 input {
     display: block;
-    margin: 0;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: #fff;
 }
 
 select {
     display: block;
-    margin: 2px 0px;
+    margin-bottom: 10px;
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+select option {
+    color: black;
 }
 
 label {
     display: block;
-    margin: 2px 0px;
+    margin-top: 10px;
 }
 
 .send-btn {
@@ -37,7 +48,6 @@ label {
     background-color: #02475e;
     border-radius: 20px;
     color: #fff;
-
 }
 
 .send-btn:hover {
