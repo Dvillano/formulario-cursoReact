@@ -37,4 +37,11 @@ label {
     background-color: #02475e;
     border-radius: 20px;
     color: #fff;
+
+}
+
+.send-btn:hover {
+    background-image: linear-gradient(#b1ccda 49%, #96b4c5 51%);
+    color: #03324c;
+    cursor: pointer;
 }
