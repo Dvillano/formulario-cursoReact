@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 //Envio el HTML en el GET request
