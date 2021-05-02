@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 
+
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
@@ -26,6 +27,6 @@ app.get("*", (req,res) => {
     res.redirect("/");
 }) 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Server iniciado en puerto 3000");
 })
