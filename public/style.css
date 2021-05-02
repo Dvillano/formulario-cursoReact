@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+
+    color: #fff
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    display: block;
+    margin: 0;
+}
+
+select {
+    display: block;
+    margin: 2px 0px;
+}
+
+label {
+    display: block;
+    margin: 2px 0px;
+}
+
+.send-btn {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    background-color: #02475e;
+    border-radius: 20px;
+    color: #fff;
+}
